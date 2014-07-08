@@ -1,0 +1,86 @@
+html {
+	background: #F5F5F5;
+	font-family: 'Lato';
+}
+
+body {
+	margin: 0 auto;
+	width: 90%;
+	max-width: 850px;
+}
+
+h1 {
+	text-align: center;
+}
+
+h1 span {
+	color: #BBB;
+	font-style: italic;
+}
+
+section {
+	background: #FFF;
+	border-radius: 7px;
+	border: 1px solid #CCC;
+	padding: 0;
+	margin-bottom: 30px;
+}
+
+section h2 {
+	padding: 0.75rem 1.25rem;
+	margin: 0;
+}
+
+section#forumweb h2 {
+	background: #CAD9EA;
+}
+
+section#sobak h2 {
+	background: #FFA499;
+}
+
+section#wikipedia h2 {
+	background: #E9E9E9;
+}
+
+table {
+	margin: 0 auto;
+	width: 90%;
+	border-collapse: collapse;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+table tr {
+	border-color: #BBCFE4;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+}
+
+table tr:last-child{
+	border: none;
+}
+
+table th, table td {
+	padding: 5px;
+}
+
+table th {
+	text-align: left;
+	font-weight: bold;
+}
+
+table td {
+	text-align: right;
+}
+
+footer {
+	text-align: center;
+	font-size: 0.8em;
+	color: #BFBFBF;
+}
+
+footer a {
+	text-decoration: none;
+	color: #3B73AF;
+}
