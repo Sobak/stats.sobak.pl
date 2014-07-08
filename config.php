@@ -9,4 +9,7 @@ $services = [
 	'wikipedia' => [
 		'username' => 'Sobak2',
 	],
+	'php' => [
+		'username' => 'sobak',
+	],
 ];

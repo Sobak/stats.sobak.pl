@@ -49,6 +49,10 @@ section#wikipedia h2 {
 	background: #E9E9E9;
 }
 
+section#php h2 {
+	background: #B2C0FF;
+}
+
 table {
 	margin: 0 auto;
 	width: 90%;
