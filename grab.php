@@ -13,6 +13,8 @@ $database = array();
 require 'config.php';
 require 'services/ServiceInterface.php';
 
+date_default_timezone_set($timezone);
+
 foreach ($services as $service => $config) {
 	require 'services/Service'.ucfirst($service).'.php';
 

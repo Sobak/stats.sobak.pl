@@ -13,3 +13,5 @@ $services = [
 		'username' => 'sobak',
 	],
 ];
+
+$timezone = 'Europe/Warsaw';
