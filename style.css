@@ -31,6 +31,12 @@ section h2 {
 	margin: 0;
 }
 
+section h2 a {
+	text-decoration: none;
+	color: black;
+	display: block;
+}
+
 section#forumweb h2 {
 	background: #CAD9EA;
 }

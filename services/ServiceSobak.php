@@ -2,6 +2,7 @@
 
 class ServiceSobak implements ServiceInterface {
 	public $title = 'Sobakowy Blog';
+	public $url = 'http://sobak.pl/';
 
 	public function grab($config) {
 		$response = json_decode(file_get_contents("http://sobak.pl/api/stats.php"), true);

@@ -28,7 +28,7 @@ foreach ($database as $service => $data) {
 	$template = $object->template($data);
 
 	echo '<section id="'.$service.'">';
-	echo '<h2>'.$object->title.'</h2>';
+	echo '<h2><a href="'.$object->url.'">'.$object->title.'</a></h2>';
 	echo '<table>';
 
 	foreach ($template as $name => $value) {

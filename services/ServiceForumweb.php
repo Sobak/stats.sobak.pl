@@ -2,6 +2,7 @@
 
 class ServiceForumweb implements ServiceInterface {
 	public $title = 'ForumWeb';
+	public $url = 'http://forumweb.pl/';
 
 	public function grab($config) {
 		$user_response = json_decode(file_get_contents('http://www.forumweb.pl/api/users/get.json?user_id='.$config['user_id']), true);
