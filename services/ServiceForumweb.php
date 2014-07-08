@@ -5,8 +5,9 @@ class ServiceForumweb implements ServiceInterface {
 	public $url = 'http://forumweb.pl/';
 
 	public function grab($config) {
-		$user_response = json_decode(file_get_contents('http://www.forumweb.pl/api/users/get.json?user_id='.$config['user_id']), true);
-		$top_response = json_decode(file_get_contents('http://www.forumweb.pl/api/users/get_top_10.json'), true);
+		$response = json_decode(file_get_contents('http://forumweb.pl/api/_services/get.json?_[user][_class]=users&_[user][_method]=get&_[user][user_id]='.$config['user_id'].'&_[top_10][_class]=users&_[top_10][_method]=get_top_10'), true);
+		$user_response = $response['_services']['user'];
+		$top_response = $response['_services']['top_10'];
 
 		// Get position in top 10
 		$top_position = false;
