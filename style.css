@@ -53,6 +53,10 @@ section#php h2 {
 	background: #B2C0FF;
 }
 
+section#twitter h2 {
+	background: #76DDFC;
+}
+
 table {
 	margin: 0 auto;
 	width: 90%;

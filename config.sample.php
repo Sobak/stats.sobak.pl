@@ -12,6 +12,15 @@ $services = [
 	'php' => [
 		'username' => 'sobak',
 	],
+	'twitter' => [
+		'username' => 'SobakPL',
+		'oauth' => [
+			'customer_key' => '',
+			'customer_secret' => '',
+			'oauth_access_token' => '',
+			'oauth_access_token_secret' => '',
+		]
+	],
 ];
 
 $timezone = 'Europe/Warsaw';
