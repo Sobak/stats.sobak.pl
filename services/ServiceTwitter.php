@@ -2,7 +2,7 @@
 
 class ServiceTwitter implements ServiceInterface {
 	public $title = 'Twitter';
-	public $url = 'http://twitter.com/';
+	public $url = 'https://twitter.com/';
 
 	public function grab($config) {
 		require 'includes/TwitterOAuth.php';
