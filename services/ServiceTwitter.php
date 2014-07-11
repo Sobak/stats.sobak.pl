@@ -27,8 +27,8 @@ class ServiceTwitter implements ServiceInterface {
 	public function template($data) {
 		return [
 			'Tweetów' => $data['tweets'],
-			'Śledzących' => $data['followers'],
-			'Śledzonych' => $data['following']
+			'Obserwujących' => $data['followers'],
+			'Obserwowanych' => $data['following']
 		];
 	}
 }
