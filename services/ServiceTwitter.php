@@ -10,8 +10,8 @@ class ServiceTwitter implements ServiceInterface {
 		$oauthConfig = array(
 			'consumer_key' => $config['oauth']['customer_key'],
 			'consumer_secret' => $config['oauth']['customer_secret'],
-			'oauth_token' => $config['oauth']['oauth_token'],
-			'oauth_token_secret' => $config['oauth']['oauth_token_secret']
+			'oauth_token' => $config['oauth']['oauth_access_token'],
+			'oauth_token_secret' => $config['oauth']['oauth_access_token_secret']
 		);
 
 		$twitter = new TwitterOAuth($oauthConfig);
