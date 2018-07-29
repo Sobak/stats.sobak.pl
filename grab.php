@@ -24,7 +24,7 @@ foreach ($services as $service => $config) {
 	echo "{$object->title} data grabbed...\n";
 }
 
-echo 'done in '.round((microtime(true) - $time_start), 3).' sec.';
+echo 'done in '.round((microtime(true) - $time_start), 3).' sec.' . "\n";
 
 // Replace existing database with new one
 file_put_contents('database.json', json_encode($database));
