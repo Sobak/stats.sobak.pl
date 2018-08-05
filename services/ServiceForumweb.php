@@ -30,7 +30,7 @@ class ServiceForumweb implements ServiceInterface {
 	public function template($data) {
 		return [
 			'Postów' => number_format($data['posts'], 0, '.', ' '),
-			'Pozycja w rankingu użytkowników' => $data['top_position'] ? $data['top_position'] : 'Poza top10 :(',
+			// 'Pozycja w rankingu użytkowników' => $data['top_position'] ? $data['top_position'] : 'Poza top10 :(',
 			'Punktów pomocy' => number_format($data['help_points'], 0, '.', ' ')
 		];
 	}
