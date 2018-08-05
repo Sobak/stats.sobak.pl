@@ -12,6 +12,10 @@ $services = [
 	'php' => [
 		'username' => 'sobak',
 	],
+	'github' => [
+		'username' => 'Sobak',
+		'password' => '',
+	],
 	'twitter' => [
 		'username' => 'SobakPL',
 		'oauth' => [

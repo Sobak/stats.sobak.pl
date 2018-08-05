@@ -53,6 +53,12 @@ section#php h2 {
 	background: #B2C0FF;
 }
 
+section#github h2,
+section#github h2 a {
+	background: #000;
+	color: #FFF;
+}
+
 section#twitter h2 {
 	background: #76DDFC;
 }
