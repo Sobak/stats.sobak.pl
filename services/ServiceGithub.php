@@ -2,7 +2,10 @@
 
 class ServiceGithub implements ServiceInterface {
 	public $title = 'GitHub';
-	public $url = 'https://github.com/';
+
+	public function __construct($config) {
+		$this->url = 'https://github.com/' . $config['username'];
+	}
 
 	public function grab($config) {
 		$auth = base64_encode($config['username'] . ":" . $config['password']);

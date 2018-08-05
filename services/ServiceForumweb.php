@@ -2,7 +2,10 @@
 
 class ServiceForumweb implements ServiceInterface {
 	public $title = 'ForumWeb';
-	public $url = 'http://forumweb.pl/';
+
+	public function __construct($config) {
+		$this->url = 'http://forumweb.pl/profile.php?mode=viewprofile&u=' . $config['user_id'];
+	}
 
 	public function grab($config) {
 		$response = json_decode(file_get_contents('http://forumweb.pl/api/_services/get.json?_[user][_class]=users&_[user][_method]=get&_[user][user_id]='.$config['user_id'].'&_[top_10][_class]=users&_[top_10][_method]=get_top_10'), true);

@@ -19,7 +19,7 @@ foreach ($services as $service => $config) {
 	require 'services/Service'.ucfirst($service).'.php';
 
 	$class = 'Service'.ucfirst($service);
-	$object = new $class;
+	$object = new $class($config);
 	$database[$service] = $object->grab($config);
 	echo "{$object->title} data grabbed...\n";
 }

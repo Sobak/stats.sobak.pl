@@ -11,6 +11,7 @@
 <h1>Sobak <span>- kilka nudnych statystyk</span></h1>
 
 <?php
+require 'config.php';
 require 'services/ServiceInterface.php';
 
 if (!file_exists('database.json') || filesize('database.json') < 10) {
@@ -24,7 +25,7 @@ foreach ($database as $service => $data) {
 	require 'services/Service'.ucfirst($service).'.php';
 
 	$class = 'Service'.ucfirst($service);
-	$object = new $class;
+	$object = new $class($services[$service]);
 	$template = $object->template($data);
 
 	echo '<section id="'.$service.'">';
