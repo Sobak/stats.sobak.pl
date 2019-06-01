@@ -5,13 +5,13 @@ class ServiceSobak implements ServiceInterface {
 	public $url = 'http://sobak.pl/';
 
 	public function grab($config) {
-		$response = json_decode(file_get_contents("http://sobak.pl/api/stats.php"), true);
+		$response = json_decode(file_get_contents("http://sobak.pl/api/stats"), true);
 
 		// Get number of posts per day
 		$start_date = new DateTime($config['start_date']);
 		$today = new DateTime();
 
-		$posts = $response['stats']['total_posts'];
+		$posts = $response['total_posts'];
 		$blog_age = $today->diff($start_date)->days;
 
 		$posts_per_day = $posts / $blog_age;
@@ -19,7 +19,7 @@ class ServiceSobak implements ServiceInterface {
 		return [
 			'posts' => (int)$posts,
 			'posts_per_day' => (float)$posts_per_day,
-			'words' => (int)$response['stats']['total_words'],
+			'words' => (int)$response['total_words'],
 		];
 	}
 
