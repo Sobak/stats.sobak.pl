@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<title>Sobak - kilka nudnych statystyk</title>
 	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato&amp;subset=latin-ext">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&amp;subset=latin-ext">
 </head>
 <body>
 
